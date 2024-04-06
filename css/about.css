@@ -1,0 +1,92 @@
+.welcome {
+  height: 50vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: var(--text-white);
+}
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+}
+.trainerii {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.container-trainer {
+  padding-bottom: var(--spacing-large);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.card-trainer {
+  /* width: 25%; */
+
+  min-height: 350px;
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: calc(2 * var(--spacing-xl));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+}
+
+.container-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -70px;
+  z-index: 0;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.nume {
+  display: block;
+  width: 100%;
+  background-color: rgba(20, 30, 76, 0.9);
+  border-radius: 5px;
+  padding: var(--spacing-tiny) 0;
+  margin-bottom: var(--spacing-medium);
+  margin-top: -25px;
+  z-index: 1;
+}
+
+.nume h3 {
+  font-size: var(--fs-large);
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .container-trainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-trainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 488px) {
+  .container-trainer {
+    grid-template-columns: 1fr;
+  }
+}

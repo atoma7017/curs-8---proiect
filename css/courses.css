@@ -1,0 +1,123 @@
+.welcome {
+  background-color: var(--bg-primary);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+}
+.programe {
+  background-color: var(--bg-light);
+  padding: var(-spacing-medium) var(--spacing-small);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.prezentare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.prezentare h2 {
+  margin-bottom: var(--spacing-large);
+  margin-top: var(--spacing-large);
+}
+
+.prezentare p {
+  margin-bottom: var(--spacing-large);
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+}
+
+.courses-containter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: auto;
+}
+
+.card-curs {
+  /* width: calc(100% / 3); */
+  padding: var(--spacing-tiny);
+  margin-right: var(--spacing-small);
+  margin-left: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+@media (max-width: 992px) {
+  .courses-containter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-containter {
+    grid-template-columns: 1fr;
+  }
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.continut-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--spacing-small);
+}
+
+.titlu-card {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+.certificare {
+  margin-bottom: var(--spacing-medium);
+  display: flex;
+  align-items: center;
+}
+.microsoft-logo {
+  height: auto;
+  width: 80px;
+  margin-left: var(--spacing-small);
+}
+
+.detalii-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--spacing-medium);
+}
+
+.detalii-card span {
+  font-size: var(--fs-medium);
+  color: #666;
+  vertical-align: middle;
+}
+
+.durata {
+  margin-left: var(--spacing-small);
+}
+
+.button {
+  text-decoration: none;
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: #2bb686;
+  border: 1px solid #2bb686;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-bottom: var(--spacing-medium);
+}

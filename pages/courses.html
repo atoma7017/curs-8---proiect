@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Includem legatura catre pagina nostra de CSS - pentru variabile-->
+    <link href="../css/main.css" rel="stylesheet" />
+    <!-- Includem legatura catre pagina nostra de CSS - pentru pagina COURSES-->
+    <link href="../css/courses.css" rel="stylesheet" />
+    <title>Courses</title>
+    <meta name="description" content="O replica a site-ului it.school.ro" />
+
+    <!-- Adaugam fonturile prima data -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adaugam link pentru iconite -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="/index.html">
+          <img
+            src="../img/itschool-logo.png"
+            class="logo-link"
+            alt="itschool logo"
+          />
+        </a>
+        <div class="menu-icon-container">
+          <span class="material-symbols-outlined menu-icon"> menu </span>
+          <input type="checkbox" />
+
+          <ul>
+            <li class="courses">
+              <a href="..\pages\courses.html"> Cursuri Online</a>
+            </li>
+            <li class="about-us">
+              <a href="..\pages\about.html">
+                Despre noi
+                <!-- Iconita luata de pe Material Icons -->
+                <span class="material-symbols-outlined arrow-down-icon">
+                  arrow_drop_down
+                </span>
+              </a>
+              <!-- Submeniul afisat la hover pe "despre noi" -->
+              <div class="submenu">
+                <a href="index.html"> IT School</a>
+                <a href="..\pages\about.html"> Despre noi</a>
+              </div>
+            </li>
+
+            <li class="contact">
+              <a href="..\pages\contact.html"> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="welcome">
+      <h1>Cursuri IT Online, live</h1>
+    </section>
+    <section class="programe">
+      <div class="prezentare">
+        <h2>Programe de pregătire</h2>
+        <p>
+          Acum este posibil să te pregătești pentru o carieră în IT din
+          confortul și siguranța casei tale. Cursurile se vor desfășura în
+          mediul online, prin
+          <b>sesiuni de training interactive, live,</b> alături de trainer. Dacă
+          îți dorești să faci parte din această industrie, începe astăzi un
+          program de pregătire care îți oferă șanse reale de angajare după
+          absolvire.
+        </p>
+      </div>
+      <div class="courses-containter">
+        <div class="card-curs">
+          <img src="..\img\python.jpeg" alt="python" class="img-card" />
+          <div class="continut-card">
+            <h3 class="titlu-card">Programare Python</h3>
+            <p class="certificare">
+              Certificare
+              <img
+                src="..\img\microsoft-color.png"
+                alt="microsoft-logo"
+                class="microsoft-logo"
+              />
+            </p>
+            <div class="detalii-card">
+              <div class="detalii">
+                <span class="material-symbols-outlined">today</span>
+                <span>In curand</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"
+                  >business_center</span
+                >
+                <span>5 luni</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"> schedule </span>
+                <span>100 ore</span>
+              </div>
+            </div>
+            <a href="#" class="button">Detalii</a>
+          </div>
+        </div>
+
+        <div class="card-curs">
+          <img
+            src="..\img\web-dev.jpeg"
+            alt="web Development"
+            class="img-card"
+          />
+          <div class="continut-card">
+            <h3 class="titlu-card">Web Development</h3>
+            <p class="certificare">
+              Certificare
+              <img
+                src="..\img\microsoft-color.png"
+                alt="microsoft-logo"
+                class="microsoft-logo"
+              />
+            </p>
+            <div class="detalii-card">
+              <div class="detalii">
+                <span class="material-symbols-outlined">today</span>
+                <span>In curand</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"
+                  >business_center</span
+                >
+                <span>5 luni</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"> schedule </span>
+                <span>100 ore</span>
+              </div>
+            </div>
+            <a href="#" class="button">Detalii</a>
+          </div>
+        </div>
+
+        <div class="card-curs">
+          <img src="..\img\Java.jpeg" alt="Java" class="img-card" />
+          <div class="continut-card">
+            <h3 class="titlu-card">Programare Java</h3>
+            <p class="certificare">
+              Certificare
+              <img
+                src="..\img\microsoft-color.png"
+                alt="microsoft-logo"
+                class="microsoft-logo"
+              />
+            </p>
+            <div class="detalii-card">
+              <div class="detalii">
+                <span class="material-symbols-outlined">today</span>
+                <span>In curand</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"
+                  >business_center</span
+                >
+                <span>5 luni</span>
+              </div>
+              <div class="detalii">
+                <span class="material-symbols-outlined durata"> schedule </span>
+                <span>100 ore</span>
+              </div>
+            </div>
+            <a href="#" class="button">Detalii</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

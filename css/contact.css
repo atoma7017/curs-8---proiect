@@ -1,0 +1,160 @@
+.welcome {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--bg-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: var(--text-white);
+}
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+}
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.contact .container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+
+.contact h2 {
+  text-align: center;
+  padding-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.contact .info p {
+  margin-bottom: var(--spacing-large);
+}
+
+.contact .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.contact-wrapper ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--spacing-medium);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-wrapper li {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  padding-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-wrapper .element {
+  color: var (--text-dark);
+  font-size: var(--fs-medium);
+}
+
+.contact .material-symbols-outlined {
+  vertical-align: middle;
+  color: var(--text-primary);
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+.contact a {
+  color: #8e8e8e;
+  font-size: var(--fs-medium);
+}
+
+.formular {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-medium);
+}
+
+.contact label {
+  margin-bottom: var(--spacing-tinny);
+  color: var(--text-dark);
+  font-size: var(--fs-medium);
+}
+
+.contact input {
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+.contact textarea {
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+  font-family: inherit;
+  height: 100px;
+}
+
+.contact input[type="submit"] {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-small);
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .contact .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-wrapper ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .formular {
+    width: 100%;
+    padding: 0;
+  }
+}
